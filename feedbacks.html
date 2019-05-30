@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agency</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<section class="header">
+        <!-- <div class="header-items header-logo"> -->
+            <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
+            </a>
+        <!-- </div> -->
+        <div class="header-menu">
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span> 
+        </div>
+        <div class="header-items ">
+            <nav class="header-nav">
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="#catalog">Каталог нерухомостей</a></li>
+                <li><a href="feedbacks.html">Відгуки</a></li>
+                <li><a href="#order">Замовити послугу</a></li>
+            </nav>
+        </div>
+        <div class="header-items header-search">
+            <input class="header-search_search" type="text">
+            <input class="header-search_button" type="submit" value="Шукати">
+        </div>
+    </section>
+    <section class="mobile">
+        <nav class="mobile-menu">
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="#catalog">Каталог нерухомостей</a></li>
+            <li><a href="feedbacks.html">Відгуки</a></li>
+            <li><a href="#order">Замовити послугу</a></li>
+        </nav>
+    </section>
+<!-- FEEDBACK -->
+    <section class="footer">
+        <div id="order" class="footer-form">
+            <h2 class="footer-title">
+                Замовлення послуги
+            </h2>
+            <form action="#">
+                <input type="text" placeholder="ПІБ*" required>
+                <input type="email" placeholder="Email*" required>
+                <input type="phone" placeholder="Телефон*" required>
+                <select name="" id="footer-select">
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                </select>
+                <label for="footer-select">Виберіть послугу</label>
+                <input type="submit" value="Відправити">
+            </form>
+        </div>
+        <div class="footer-contacts">
+            <h2 class="footer-title">
+                Зв'яжіться з нами
+            </h2>
+            <p class="footer-contacts_numbers">+38 (097) 1494 880</p>
+            <p class="footer-contacts_numbers">info@agency.com</p>
+            <p class="footer-contacts_numbers">м. Вінниця вул. Келецька 98</p>
+        </div>
+        
+    </section>
+    <div id="map"></div>
+    <script src="js/data.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
+    async defer></script>
+    <script>
+
+    </script>
+</body>
+</html>

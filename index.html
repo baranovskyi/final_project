@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agency</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <section class="header">
+        <!-- <div class="header-items header-logo"> -->
+            <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
+            </a>
+        <!-- </div> -->
+        <div class="header-menu">
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span> 
+        </div>
+        <div class="header-items ">
+            <nav class="header-nav">
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="#catalog">Каталог нерухомостей</a></li>
+                <li><a href="feedbacks.html">Відгуки</a></li>
+                <li><a href="#order">Замовити послугу</a></li>
+            </nav>
+        </div>
+        <div class="header-items header-search">
+            <input id="text-to-find" class="header-search_search" type="text">
+            <input onclick="FindOnPage('text-to-find')" class="header-search_button" type="submit" value="Шукати">
+        </div>
+    </section>
+    <section class="mobile">
+        <nav class="mobile-menu">
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="#catalog">Каталог нерухомостей</a></li>
+            <li><a href="feedbacks.html">Відгуки</a></li>
+            <li><a href="#order">Замовити послугу</a></li>
+        </nav>
+    </section>
+<!-- Services -->
+    <section class="clider"> 
+                <div class="slides">
+                    <p>Швидко</p>
+                </div>
+                <div class="slides">
+                    <p>Якісно</p>
+                </div>
+                <div class="slides">
+                    <p>Надійно</p>
+                </div>
+                <div class="arrows">
+                    <img src="images/arrow.png" alt="" class="leftArrow" onclick="addSlide(-1)">
+                    <img src="images/arrow.png" alt="" class="rightArrow" onclick="addSlide(+1)">
+                </div>            
+    </section> 
+<!-- CATALOG -->
+<h2 id="catalog" class="main-title">Нерухомість</h2>
+    <section class="catalog" id="content">
+        <div class="catalog-filter">
+            <p class="catalog-filter_title">Фільтр за розташуванням</p>
+            <form action="">
+                   <label><input type="checkbox" value="Київ" id="check1"> Київ</label> 
+                    <!-- <label for="check1">Київ</label> -->
+                    <input type="checkbox" value="Одеса" id="check2">
+                    <label for="check2">Одеса</label>
+                    <input type="checkbox" value="Львів" id="check3">
+                    <label for="check3">Львів</label>
+                    <input type="checkbox" value="Харків" id="check4">
+                    <label for="check4">Харків</label>
+                    <input type="checkbox" value="Вінниця" id="check5">
+                    <label for="check5">Вінниця</label>
+                    <input type="checkbox" value="Дніпро" id="check6">
+                    <label for="check6">Дніпро</label>
+                    <input type="checkbox" value="Донецьк" id="check7">
+                    <label for="check7">Донецьк</label>
+                </form>
+            
+        </div>
+        <!-- <div class="catalog-content"> -->
+            <!-- <div class="catalog-content_item" id="catalog-item"> -->
+                <!-- <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві">
+                <p><span class="item-bold">Місце: </span>Київ</p>
+                <p><span class="item-bold">Площа: </span>55 метрів</p>
+                <p><span class="item-bold">Вартість: </span>22000$</p>
+                <button class="item-buy" value="Купити">Купити</button>  -->
+            <!-- </div> -->
+          
+        <!-- </div>  -->
+      
+       
+
+    </section>
+    
+            <input type="text" id="place" placeholder="Місто розташування">
+            <input type="text" id="square" placeholder="Площа об'єкту">
+            <input type="text" id="cost" placeholder="Ціна об'єкту">
+            <input type="file" id="objectImage" data-buttonText="Завантажте картинку">
+            <input type="submit" id="submit"  value="Додати об'єкт">
+    
+
+
+<!-- CONTACTS -->
+    <section class="footer">
+        <div id="order" class="footer-form">
+            <h2 class="footer-title">
+                Замовлення послуги
+            </h2>
+            <form action="#">
+                <input type="text" placeholder="ПІБ*" required>
+                <input type="email" placeholder="Email*" required>
+                <input type="phone" placeholder="Телефон*" required>
+                <select name="" id="footer-select">
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                    <option value="name">name</option>
+                </select>
+                <label for="footer-select">Виберіть послугу</label>
+                <input type="submit" value="Відправити">
+            </form>
+        </div>
+        <div class="footer-contacts">
+            <h2 class="footer-title">
+                Зв'яжіться з нами
+            </h2>
+            <p class="footer-contacts_numbers">+38 (097) 1494 880</p>
+            <p class="footer-contacts_numbers">info@agency.com</p>
+            <p class="footer-contacts_numbers">м. Вінниця вул. Келецька 98</p>
+        </div>
+        
+    </section>
+    <div id="map"></div>
+    <!-- <script src="js/data.js"></script> -->
+    <!-- <script src="js/catalog.js"></script> -->
+    <script src="js/slider.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/newObject.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
+    async defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
