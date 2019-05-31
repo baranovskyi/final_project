@@ -102,7 +102,9 @@ nav {
 .catalog {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* align-content: stretch; */
+    justify-content: center;
+    
     margin: 20px;
 } 
 
@@ -113,22 +115,21 @@ nav {
     margin-top: 50px;
 }
 .catalog-filter {
+    margin-top: 20px;
     min-width: 150px;
+    text-align: center;
+    color: #989898;
 }
 .catalog-filter_title {
-    color: #989898;
+    /* color: #989898; */
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .catalog-filter input {
-    float: left;
-    display: block;
-    margin-right: 5px;
+    margin-left: 10px;
 }
 .catalog-filter label {
-    margin-bottom: 10px;
-    display: block;
-    color: #989898;
+    
 }
 
 .catalog-content {
@@ -162,6 +163,15 @@ nav {
     border-radius: 20px;
     
 }
+.newObject {
+    text-align: center;
+}
+.newObject input {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+}
+
 /* SERVICES */ 
 .services {
     display: flex;
@@ -318,3 +328,14 @@ nav {
         width: 0;
     }
 }
+
+/* .catalog-filter input {
+    float: left;
+    display: block;
+    margin-right: 5px;
+}
+.catalog-filter label {
+    margin-bottom: 10px;
+    display: block;
+    color: #989898;
+} */
