@@ -20,7 +20,7 @@ function doThis () {
     imageUrl = reader.result;
     place = placeInput.value;
     square = squareInput.value + " метрів";
-    cost = costInput.value + "$";
+    cost = costInput.value;
     
     var houseObject = new newObject (imageUrl, place, square, cost);
     localStorage.setItem(key, JSON.stringify(houseObject));
@@ -43,9 +43,10 @@ var item = localStorage.getItem(localStorage.key(i));
             img.src =   item['image'];
             place.innerHTML = '<span class="item-bold">' + "Місце: " + "</span>" + item['place'];
             catalogBlock.setAttribute("data-parent", item['place']);
-            catalogBlock.setAttribute("data-num", i + 2)
+            catalogBlock.setAttribute("data-num", i + 2);
+            catalogBlock.setAttribute("data-cost", item['cost'])
             square.innerHTML = '<span class="item-bold">' + "Площа: " + "</span>" + item['square']; 
-            cost.innerHTML = '<span class="item-bold">' + "Вартість: " + "</span>" + item['cost'];
+            cost.innerHTML = '<span class="item-bold">' + "Вартість: " + "</span>" + item['cost'] + '$';
             catalogBlock.appendChild(img);
             catalogBlock.appendChild(place);
             catalogBlock.appendChild(square)

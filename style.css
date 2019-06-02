@@ -329,18 +329,7 @@ nav {
     }
 }
 
-/* .catalog-filter input {
-    float: left;
-    display: block;
-    margin-right: 5px;
-}
-.catalog-filter label {
-    margin-bottom: 10px;
-    display: block;
-    color: #989898;
-} */
 
-/* pagination */
   .paginator {
       text-align: center;
     line-height: 150%;
@@ -349,7 +338,7 @@ nav {
     display: inline-block;
     width: 20px;
     background-color: #d6d3d3;
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
   }
   .paginator_active {
