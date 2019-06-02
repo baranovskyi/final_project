@@ -7,15 +7,14 @@
     <title>Agency</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="simplePagination.css">
 </head>
 <body>
 <!-- HEADER -->
-    <section class="header">
-        <!-- <div class="header-items header-logo"> -->
+    <!-- <section class="header">
             <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
             </a>
-        <!-- </div> -->
-        <div class="header-menu">
+        <div class="header-menu" ">
             <span class="header-menu_button "></span>
             <span class="header-menu_button "></span>
             <span class="header-menu_button "></span> 
@@ -40,9 +39,9 @@
             <li><a href="feedbacks.html">Відгуки</a></li>
             <li><a href="#order">Замовити послугу</a></li>
         </nav>
-    </section>
+    </section> -->
 <!-- Services -->
-    <section class="clider"> 
+    <!-- <section class="clider"> 
                 <div class="slides">
                     <p>Швидко</p>
                 </div>
@@ -56,12 +55,12 @@
                     <img src="images/arrow.png" alt="" class="leftArrow" onclick="addSlide(-1)">
                     <img src="images/arrow.png" alt="" class="rightArrow" onclick="addSlide(+1)">
                 </div>            
-    </section> 
+    </section>  -->
 <!-- CATALOG -->
 <h2 id="catalog" class="main-title">Нерухомість</h2>
 <div class="catalog-filter">
         <p class="catalog-filter_title">Фільтр за розташуванням</p>
-        <form id="changeCheckbox" onchange="doThiss(event);">
+        <form id="changeCheckbox">
                <label><input class="checkBox" type="checkbox" value="Київ" id="check1"> Київ</label> 
                 <!-- <label for="check1">Київ</label> -->
                 <input  class="checkBox" type="checkbox" value="Одеса" id="check2">
@@ -79,22 +78,21 @@
             </form>
         
     </div>
-    <section class="catalog" id="content">
         
-        <div class="catalog-content" id="as" data-parent="Київ"> 
-            <div class="catalog-content_item" id="catalog-item">
-               <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві"> 
-                <p><span class="item-bold">Місце: </span>Київ</p>
-                <p><span class="item-bold">Площа: </span>55 метрів</p>
-                <p><span class="item-bold">Вартість: </span>22000$</p>
-                <button class="item-buy" value="Купити">Купити</button>  
+            <div class="catalog" id="content">
+                <div class="catalog-content" data-parent="Київ" data-num=1> 
+                    <div class="catalog-content_item" id="catalog-item">
+                       <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві"> 
+                        <p><span class="item-bold">Місце: </span>Київ</p>
+                        <p><span class="item-bold">Площа: </span>55 метрів</p>
+                        <p><span class="item-bold">Вартість: </span>22000$</p>
+                        <button class="item-buy" value="Купити">Купити</button>  
+                    </div>
+                  
+                </div> 
             </div>
-          
-        </div> 
-      
-       
-
-    </section>
+            <div class="paginator" onclick="pagination(event)"></div>
+   
     <div class="newObject">
             <input type="text" id="place" placeholder="Місто розташування">
             <input type="text" id="square" placeholder="Площа об'єкту">
@@ -139,17 +137,17 @@
     <div id="map"></div>
     <!-- <script src="js/data.js"></script> -->
     <!-- <script src="js/catalog.js"></script> -->
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
     <script src="js/map.js"></script>
     <script src="js/search.js"></script>
     <script src="js/newObject.js"></script>
+    <script src="js/paginator.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
     async defer></script>
     <script src="js/jquery.js"></script>
     <script src="menu.js"></script>
     <script>
-        
-      
+   
 
     </script>
 </body>

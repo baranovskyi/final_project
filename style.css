@@ -133,7 +133,7 @@ nav {
 }
 
 .catalog-content {
-    display: block;
+    display: none;
     line-height: 1.5;
     text-align: center;
     padding: 10px;
@@ -296,9 +296,9 @@ nav {
     .header-menu_button-noactive:nth-child(2) {
         display: none;
     }
-    .mobile {
+    /* .mobile {
         display: none;
-    }
+    } */
     .mobile-active {
         display: block;
         background-color: #302b2d;
@@ -339,3 +339,19 @@ nav {
     display: block;
     color: #989898;
 } */
+
+/* pagination */
+  .paginator {
+      text-align: center;
+    line-height: 150%;
+  }
+  .paginator > span {
+    display: inline-block;
+    width: 20px;
+    background-color: #d6d3d3;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .paginator_active {
+    color: red;
+  }
