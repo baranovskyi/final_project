@@ -41,6 +41,12 @@
             <li><a href="#order">Замовити послугу</a></li>
         </nav>
     </section>
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><span>Відгуки</span></li>
+        </ul>
+    </div>
 <!-- FEEDBACK -->
     <section class="footer">
         <div id="order" class="footer-form">
@@ -52,12 +58,13 @@
                 <input type="email" placeholder="Email*" required>
                 <input type="phone" placeholder="Телефон*" required>
                 <select name="" id="footer-select">
-                    <option value="name">name</option>
-                    <option value="name">name</option>
-                    <option value="name">name</option>
-                    <option value="name">name</option>
+                        <option value="" disabled selected hidden>Виберіть Послугу</option>
+
+                    <option value="name">Продаж нерухомості</option>
+                    <option value="name">Купівля нерухомості</option>
+                    <option value="name">Оформлення документів</option>
+                    <option value="name">Підбір матеріалів</option>
                 </select>
-                <label for="footer-select">Виберіть послугу</label>
                 <input type="submit" value="Відправити">
             </form>
         </div>

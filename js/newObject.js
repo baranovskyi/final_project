@@ -24,6 +24,8 @@ function doThis () {
     
     var houseObject = new newObject (imageUrl, place, square, cost);
     localStorage.setItem(key, JSON.stringify(houseObject));
+    alert("Новий об'єкт додано");
+    location.reload();
     }
         reader.readAsDataURL(objectImage.files[0]);
 }    

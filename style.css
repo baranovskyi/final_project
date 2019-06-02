@@ -61,6 +61,25 @@ nav {
     padding: 5px 10px;
     border-radius: 15px;
 }
+.breadcrumbs {
+    margin: 30px;
+}
+.breadcrumbs li {
+    font-size: 18px;
+}
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #666565;
+    float: left;
+    display: inline-block; 
+    margin-right: 10px; 
+}
+.breadcrumbs li a:after {
+    content: '>';
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 /* SLIDER */
 .slides p {
     color: #000;
@@ -223,7 +242,7 @@ nav {
 .footer-form form select {
     background-color: #302b2d;
     border: 2px solid #fff;
-    width: 99px;
+    width: 275px;
     height: 30px;
     color: #fff;
     margin-right: 10px;
