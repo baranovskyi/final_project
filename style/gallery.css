@@ -1,0 +1,25 @@
+/* .gallery {
+    
+}
+.gallery img {
+    margin: 10px;
+} */
+body {
+    background-color: #6d6d6d;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    /* align-items: center; */
+}
+.gallery img{
+	margin:5px;
+    border:3px solid #fff;
+    width: 200px;
+    height: 200px;
+}
+a:hover img{
+	border:3px solid #034F80;
+}
