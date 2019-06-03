@@ -216,6 +216,43 @@ nav {
     color: #989898;
     line-height: 1.3;
 }
+/* FEEDBACKS */
+.feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.feedbacks-block {
+    display: block;
+    max-width: 300px;
+    background-color: #302b2d;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.feedbacks-rating {
+    display: inline-block;
+    float: right;
+}
+.feedbacks-rating-rate {
+    color: red;
+}
+.feedbacks-block .name {
+    display: inline-block;
+    font-size: 20px;
+}
+.feedbacks-block .text {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.feedbacks-rating p {
+    display: inline-block;
+}
+
+.add-feedback * {
+    display: block;
+}
 /* CONTACTS */
 .footer {
     background-color: #302b2d;
