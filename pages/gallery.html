@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agency</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+</head>
+<body>
+<!-- HEADER -->
+    <section class="header">
+            <a href="../index.html"><img class="header-logo" src="../images/logo.png" alt="logo">
+            </a>
+        <div class="header-menu" ">
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span>
+            <span class="header-menu_button "></span> 
+        </div>
+        <div class=" header-items ">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="">Каталог</a>
+                            <ul>
+                                <li><a href="#catalog">Каталог нерухомостей</a></li>
+                                <li><a href="gallery.html">Галерея</a></li>
+                            </ul>
+                        <li><a href="feedbacks.html">Відгуки</a></li>
+                        <li><a href="#">Замовити послугу</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        <div class="header-items header-search">
+            <input id="text-to-find" class="header-search_search" type="text">
+            <input onclick="FindOnPage('text-to-find')" class="header-search_button" type="submit" value="Шукати">
+        </div>
+    </section>
+    <section class="mobile">
+        <nav class="mobile-menu">
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="#catalog">Каталог нерухомостей</a></li>
+            <li><a href="feedbacks.html">Відгуки</a></li>
+            <li><a href="#order">Замовити послугу</a></li>
+        </nav>
+    </section>
+    <div class="breadcrumbs-gallery">
+            <ul>
+                <li><a  class="gallery-bread" href="../index.html">Головна</a></li>
+                <li><span>Галерея</span></li>
+            </ul>
+        </div>
+<!-- GALLERY -->
+    <div id="gallery" class="gallery">
+        <a class="photo" href="../images/gallery/item1.jpg"> <img src="../images/gallery/item1.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item2.jpg"><img src="../images/gallery/item2.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item3.jpg"><img src="../images/gallery/item3.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item4.jpg"><img src="../images/gallery/item4.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item5.jpg"><img src="../images/gallery/item5.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item6.jpg"><img src="../images/gallery/item6.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item7.jpg"><img src="../images/gallery/item7.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item8.jpg"><img src="../images/gallery/item8.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item9.jpg"><img src="../images/gallery/item9.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item10.jpg"><img src="../images/gallery/item10.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item11.jpg"><img src="../images/gallery/item11.jpg" alt=""></a>
+        <a class="photo" href="../images/gallery/item12.jpg"><img src="../images/gallery/item12.jpg" alt=""></a>
+    </div>
+
+
+    <section class="footer">
+        <div id="order" class="footer-form">
+            <h2 class="footer-title">
+                Замовлення послуги
+            </h2>
+            <form action="#">
+                <input type="text" placeholder="ПІБ*" required>
+                <input type="email" placeholder="Email*" required>
+                <input type="phone" placeholder="Телефон*" required>
+                <select name="" id="footer-select">
+                    <option value="" disabled selected hidden>Виберіть Послугу</option>
+
+                    <option value="name">Продаж нерухомості</option>
+                    <option value="name">Купівля нерухомості</option>
+                    <option value="name">Оформлення документів</option>
+                    <option value="name">Підбір матеріалів</option>
+                </select>
+                <input type="submit" value="Відправити">
+            </form>
+        </div>
+        <div class="footer-contacts">
+            <h2 class="footer-title">
+                Зв'яжіться з нами
+            </h2>
+            <p class="footer-contacts_numbers">+38 (097) 1494 880</p>
+            <p class="footer-contacts_numbers">info@agency.com</p>
+            <p class="footer-contacts_numbers">м. Вінниця вул. Келецька 98</p>
+        </div>
+        
+    </section>
+    <div id="map"></div>
+
+    
+
+
+    <script src="../js/map.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
+    async defer></script>
+<script src="../js/jquery-1.4.3.min.js"></script>
+ 
+   <script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="../js/menu.js"></script>
+    <script>
+   $(document).ready(function(){
+		$("a.photo").fancybox();
+        });
+	
+
+    </script>
+</body>
+</html>

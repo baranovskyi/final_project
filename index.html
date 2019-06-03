@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agency</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-<!-- HEADER -->
+    <!-- HEADER -->
     <section class="header">
-            <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
-            </a>
+        <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
+        </a>
         <div class="header-menu" ">
-            <span class="header-menu_button "></span>
-            <span class="header-menu_button "></span>
-            <span class="header-menu_button "></span> 
+            <span class=" header-menu_button "></span>
+            <span class=" header-menu_button "></span>
+            <span class=" header-menu_button "></span> 
         </div>
-        <div class="header-items ">
-            <nav class="header-nav">
-                <li><a href="services.html">Послуги</a></li>
-                <li><a href="#catalog">Каталог нерухомостей</a></li>
-                <li><a href="feedbacks.html">Відгуки</a></li>
-                <li><a href="#order">Замовити послугу</a></li>
+        <div class=" header-items ">
+            <nav class=" menu">
+            <ul>
+                <li><a href="pages/services.html">Послуги</a></li>
+                <li><a href="">Каталог</a>
+                    <ul>
+                        <li><a href="#catalog">Каталог нерухомостей</a></li>
+                        <li><a href="pages/gallery.html">Галерея</a></li>
+                    </ul>
+                <li><a href="pages/feedbacks.html">Відгуки</a></li>
+                <li><a href="#">Замовити послугу</a></li>
+            </ul>
             </nav>
         </div>
         <div class="header-items header-search">
@@ -39,90 +47,98 @@
             <li><a href="#order">Замовити послугу</a></li>
         </nav>
     </section>
-<!-- Services -->
-    <section class="clider"> 
-                <div class="slides">
-                    <p>Швидко</p>
-                </div>
-                <div class="slides">
-                    <p>Якісно</p>
-                </div>
-                <div class="slides">
-                    <p>Надійно</p>
-                </div>
-                <div class="arrows">
-                    <img src="images/arrow.png" alt="" class="leftArrow" onclick="addSlide(-1)">
-                    <img src="images/arrow.png" alt="" class="rightArrow" onclick="addSlide(+1)">
-                </div>            
-    </section> 
-<!-- CATALOG -->
-<h2 id="catalog" class="main-title">Нерухомість</h2>
-<div class="catalog-filter">
+    <!-- Services -->
+    <section class="slider">
+        <div class="slides">
+            <p>Швидко</p>
+        </div>
+        <div class="slides">
+            <p>Якісно</p>
+        </div>
+        <div class="slides">
+            <p>Надійно</p>
+        </div>
+        <div class="arrows">
+            <img src="images/arrow.png" alt="" class="leftArrow" onclick="addSlide(-1)">
+            <img src="images/arrow.png" alt="" class="rightArrow" onclick="addSlide(+1)">
+        </div>
+    </section>
+    <!-- <span ></span> -->
+    <!-- CATALOG -->
+    <h2 id="catalog" class="main-title">Нерухомість</h2>
+    <div class="catalog-filter">
         <p class="catalog-filter_title">Фільтр за розташуванням</p>
         <form id="changeCheckbox">
-               <label><input class="checkBox" type="checkbox" value="Київ" id="check1"> Київ</label> 
-                <!-- <label for="check1">Київ</label> -->
-                <input  class="checkBox" type="checkbox" value="Одеса" id="check2">
-                <label for="check2">Одеса</label>
-                <input  class="checkBox" type="checkbox" value="Львів" id="check3">
-                <label for="check3">Львів</label>
-                <input class="checkBox" type="checkbox" value="Харків" id="check4">
-                <label for="check4">Харків</label>
-                <input class="checkBox" type="checkbox" value="Вінниця" id="check5">
-                <label for="check5">Вінниця</label>
-                <input class="checkBox" type="checkbox" value="Дніпро" id="check6">
-                <label for="check6">Дніпро</label>
-                <input class="checkBox" type="checkbox" value="Донецьк" id="check7">
-                <label for="check7">Донецьк</label>
-            </form>
-        
+            <label><input class="checkBox" type="checkbox" value="Київ" id="check1"> Київ</label>
+            <!-- <label for="check1">Київ</label> -->
+            <input class="checkBox" type="checkbox" value="Одеса" id="check2">
+            <label for="check2">Одеса</label>
+            <input class="checkBox" type="checkbox" value="Львів" id="check3">
+            <label for="check3">Львів</label>
+            <input class="checkBox" type="checkbox" value="Харків" id="check4">
+            <label for="check4">Харків</label>
+            <input class="checkBox" type="checkbox" value="Вінниця" id="check5">
+            <label for="check5">Вінниця</label>
+            <input class="checkBox" type="checkbox" value="Дніпро" id="check6">
+            <label for="check6">Дніпро</label>
+            <input class="checkBox" type="checkbox" value="Донецьк" id="check7">
+            <label for="check7">Донецьк</label>
+        </form>
+
     </div>
-        <button id="sortMin">sort-</button>
-        <button id="sortMax">sort+</button>
-            <div class="catalog" id="content">
-                <div class="catalog-content" data-parent="Київ" data-num=1 data-cost="22000"> 
-                    <div class="catalog-content_item" id="catalog-item">
-                       <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві"> 
-                        <p><span class="item-bold">Місце: </span>Київ</p>
-                        <p><span class="item-bold">Площа: </span>55 метрів</p>
-                        <p><span class="item-bold">Вартість: </span>22000$</p>
-                        <button class="item-buy" value="Купити">Купити</button>  
-                    </div>
-                </div> 
-                
+    <button id="sortMin">sort-</button>
+    <button id="sortMax">sort+</button>
+    <div class="catalog" id="content">
+        <div class="catalog-content" data-parent="Київ" data-num=1 data-cost="22000">
+            <div class="catalog-content_item" id="catalog-item">
+                <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві">
+                <p><span class="item-bold">Місце: </span>Київ</p>
+                <p><span class="item-bold">Площа: </span>55 метрів</p>
+                <p><span class="item-bold">Вартість: </span>22000$</p>
+                <button class="item-buy" value="Купити">Купити</button>
             </div>
-            <div class="paginator" onclick="pagination(event)"></div>
-   
-    <div class="newObject">
-            <input type="text" id="place" placeholder="Місто розташування">
-            <input type="text" id="square" placeholder="Площа об'єкту">
-            <input type="text" id="cost" placeholder="Ціна об'єкту">
-            <input type="file" id="objectImage" data-button-text="Завантажте картинку">
-            <input type="submit" id="submit"  value="Додати об'єкт">
+        </div>
+        <div class="catalog-content" data-parent="Львів" data-num=2 data-cost="24000">
+            <div class="catalog-content_item" id="catalog-item">
+                <img class="item-image" src="images/catalog/item1.jpg" alt="Дім в Києві">
+                <p><span class="item-bold">Місце: </span>Львів</p>
+                <p><span class="item-bold">Площа: </span>69 метрів</p>
+                <p><span class="item-bold">Вартість: </span>24000$</p>
+                <button class="item-buy" value="Купити">Купити</button>
+            </div>
+        </div>
     </div>
-            
-    
+    <div class="paginator" onclick="pagination(event)"></div>
+
+    <div class="newObject">
+        <input type="text" id="place" placeholder="Місто розташування">
+        <input type="text" id="square" placeholder="Площа об'єкту">
+        <input type="text" id="cost" placeholder="Ціна об'єкту">
+        <input type="file" id="objectImage" data-button-text="Завантажте картинку">
+        <input type="submit" id="submit" value="Додати об'єкт">
+    </div>
 
 
-<!-- CONTACTS -->
+
+
+    <!-- CONTACTS -->
     <section class="footer">
         <div id="order" class="footer-form">
             <h2 class="footer-title">
                 Замовлення послуги
             </h2>
-            <form action="#">
-                <input type="text" placeholder="ПІБ*" required>
-                <input type="email" placeholder="Email*" required>
-                <input type="phone" placeholder="Телефон*" required>
-                <select name="" id="footer-select">
+            <form action="">
+                <input id="guestName" type="text" placeholder="ПІБ*" required>
+                <input id="guestEmail" type="email" placeholder="Email*" required>
+                <input id="guestPhone" type="phone" placeholder="Телефон*" required>
+                <select name="" id="chosenService">
                     <option value="" disabled selected hidden>Виберіть Послугу</option>
-
                     <option value="name">Продаж нерухомості</option>
                     <option value="name">Купівля нерухомості</option>
                     <option value="name">Оформлення документів</option>
                     <option value="name">Підбір матеріалів</option>
                 </select>
-                <input type="submit" value="Відправити">
+                <input type="submit" value="Замовити">
             </form>
         </div>
         <div class="footer-contacts">
@@ -133,7 +149,7 @@
             <p class="footer-contacts_numbers">info@agency.com</p>
             <p class="footer-contacts_numbers">м. Вінниця вул. Келецька 98</p>
         </div>
-        
+
     </section>
     <div id="map"></div>
 
@@ -142,14 +158,17 @@
     <script src="js/search.js"></script>
     <script src="js/newObject.js"></script>
     <script src="js/paginator.js"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
-    async defer></script>
+        async defer></script>
     <script src="js/jquery.js"></script>
+    <!-- <script src="js/order.js"></script> -->
     <script src="js/sort.js"></script>
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
     <script>
-   
+
 
     </script>
 </body>
+
 </html>

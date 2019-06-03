@@ -18,3 +18,21 @@ body {
 a:hover img{
 	border:3px solid #034F80;
 }
+.breadcrumbs-gallery {
+    margin: 30px;
+}
+.breadcrumbs-gallery li {
+    font-size: 18px;
+}
+.breadcrumbs-gallery li a {
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    display: inline-block; 
+    margin-right: 10px; 
+}
+.breadcrumbs-gallery li a:after {
+    content: '>';
+    margin-left: 10px;
+    vertical-align: middle;
+}

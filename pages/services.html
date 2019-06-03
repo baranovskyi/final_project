@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agency</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 <!-- HEADER -->
 <section class="header">
         <!-- <div class="header-items header-logo"> -->
-            <a href="index.html"><img class="header-logo" src="images/logo.png" alt="logo">
+            <a href="../index.html"><img class="header-logo" src="../images/logo.png" alt="logo">
             </a>
         <!-- </div> -->
         <div class="header-menu">
@@ -20,14 +20,20 @@
             <span class="header-menu_button "></span>
             <span class="header-menu_button "></span> 
         </div>
-        <div class="header-items ">
-            <nav class="header-nav">
-                <li><a href="services.html">Послуги</a></li>
-                <li><a href="#catalog">Каталог нерухомостей</a></li>
-                <li><a href="feedbacks.html">Відгуки</a></li>
-                <li><a href="#order">Замовити послугу</a></li>
-            </nav>
-        </div>
+        <div class=" header-items ">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="">Каталог</a>
+                            <ul>
+                                <li><a href="#catalog">Каталог нерухомостей</a></li>
+                                <li><a href="gallery.html">Галерея</a></li>
+                            </ul>
+                        <li><a href="feedbacks.html">Відгуки</a></li>
+                        <li><a href="#">Замовити послугу</a></li>
+                    </ul>
+                </nav>    
+            </div>
         <div class="header-items header-search">
             <input id="text-to-find" class="header-search_search" type="text">
             <input onclick="FindOnPage('text-to-find')" class="header-search_button" type="submit" value="Шукати">
@@ -43,7 +49,7 @@
     </section>
 <div class="breadcrumbs">
     <ul>
-        <li><a href="index.html">Головна</a></li>
+        <li><a href="../index.html">Головна</a></li>
         <li><span>Послуги</span></li>
     </ul>
 </div>
@@ -51,22 +57,22 @@
 <h2 class="main-title">Послуги</h2>
 <section class="services">
         <div class="services-item">
-            <img src="images/services/services-item1.jpeg" alt="Продаж нерухомості">
+            <img src="../images/services/services-item1.jpeg" alt="Продаж нерухомості">
             <p class="services-item_name" id="as">Продаж нерухомості</p>
             <p class="services-item_text">Допомагаємо продати вашу нерухомість</p>
         </div>
         <div class="services-item">
-            <img src="images/services/services-item2.jpg" alt="Купівля нерухомості">
+            <img src="../images/services/services-item2.jpg" alt="Купівля нерухомості">
             <p class="services-item_name">Купівля нерухомості</p>
             <p class="services-item_text">Допомагаємо підібрати нерухомісь за вашимим побажанями</p>
         </div>
         <div class="services-item">
-            <img src="images/services/services-item3.jpg" alt="Оформлення документів">
+            <img src="../images/services/services-item3.jpg" alt="Оформлення документів">
             <p class="services-item_name">Оформлення документів</p>
             <p class="services-item_text">Оформляємо договори купівлі-продажу, та інші, які пов'язані з нерухомістю</p>
         </div>
         <div class="services-item">
-            <img src="images/services/services-item4.jpg" alt="Підбір матеріалів">
+            <img src="../images/services/services-item4.jpg" alt="Підбір матеріалів">
             <p  class="services-item_names">Підбір матеріалів</p>
             <p class="services-item_text">Допомагаємо підібрати буд-матеріали, які будуть не дорогі та якісні</p>
         </div>
@@ -107,29 +113,11 @@
         </section>
         <div id="map"></div>
        
-        <script src="js/map.js"></script>
+        <script src="../js/map.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
         async defer></script>
-        <script src="js/jquery.js"></script>
-    <script src="menu.js"></script>
-        <script>
-        //       var services = [];
-        // var serviceItems = document.getElementById('as');
-        // services.push(serviceItems.textContent)
-        // console.log(services)
+        <script src="../js/jquery.js"></script>
+    <script src="../js/menu.js"></script>
 
-            //  var ser = document.getElementsByClassName('services-item_name')
-            //  for (let i = 0; i < ser.length; i++) {
-            //     var ser = document.getElementsByClassName('services-item_name')[i].innerHTML;
-            //     //  ser[1].innerHTML;
-                 
-            //  } 
-            //  console.log(ser)
-            //  var opt = document.getElementById('select');
-            //  var option = document.createElement('option');
-            //  option.innerHTML = ser;
-            //  console.log(ser)
-            // opt.appendChild(option);
-        </script>
     </body>
     </html>  
