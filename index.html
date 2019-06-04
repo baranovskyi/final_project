@@ -28,7 +28,7 @@
                     <ul>
                         <li><a href="#catalog">Каталог нерухомостей</a></li>
                         <li><a href="pages/gallery.html">Галерея</a></li>
-                    </ul>
+                    </ul></li>  
                 <li><a href="pages/feedbacks.html">Відгуки</a></li>
                 <li><a href="#">Замовити послугу</a></li>
             </ul>
@@ -41,10 +41,14 @@
     </section>
     <section class="mobile">
         <nav class="mobile-menu">
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="#catalog">Каталог нерухомостей</a></li>
-            <li><a href="feedbacks.html">Відгуки</a></li>
-            <li><a href="#order">Замовити послугу</a></li>
+            <a href="services.html"><li>Послуги</li> </a>
+            <a href="#catalog" id="mobile-submenu"><li>Каталог</li> </a>
+            <ul class="mobile-submenu">
+                <a href="#catalog"><li>Каталог нерухомостей</li> </a>
+                <a href="#catalog"><li>Галерея</li> </a>
+            </ul>
+            <a href="feedbacks.html"><li>Відгуки</li> </a>
+            <a href="#order"><li id="last-li">Замовити послугу</li> </a>
         </nav>
     </section>
     <!-- Services -->
@@ -166,7 +170,9 @@
     <script src="js/sort.js"></script>
     <script src="js/menu.js"></script>
     <script>
-
+        $('#mobile-submenu').click(function() {
+            $('.mobile-submenu').toggleClass('mobile-submenu_active');
+        })
 
     </script>
 </body>
