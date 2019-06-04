@@ -14,7 +14,7 @@ function newObject (imageUrl, place, square, cost) {
     this.cost = cost;
 }
 
-function doThis () {
+function createNewObject () {
 
     reader.onloadend = function() {
     imageUrl = reader.result;
@@ -57,7 +57,7 @@ var item = localStorage.getItem(localStorage.key(i));
             contentSection.appendChild(catalogBlock)
     }
 
-submit.addEventListener("click", doThis);
+submit.addEventListener("click", createNewObject);
 
 
 

@@ -27,5 +27,6 @@ var copy_page = "";
         else copy_page = document.body.innerHTML;
 
         document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:yellow;'>" + textToFind + "</a>"); 
+        window.location = '#' + textToFind;
     }
 

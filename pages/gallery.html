@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,56 +9,69 @@
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/gallery.css">
-	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 </head>
+
 <body>
-<!-- HEADER -->
+    <!-- HEADER -->
     <section class="header">
-            <a href="../index.html"><img class="header-logo" src="../images/logo.png" alt="logo">
-            </a>
+        <a href="../index.html"><img class="header-logo" src="../images/logo.png" alt="logo">
+        </a>
         <div class="header-menu" ">
-            <span class="header-menu_button "></span>
-            <span class="header-menu_button "></span>
-            <span class="header-menu_button "></span> 
+            <span class=" header-menu_button "></span>
+            <span class=" header-menu_button "></span>
+            <span class=" header-menu_button "></span> 
         </div>
         <div class=" header-items ">
-                <nav class="menu">
+                <nav class=" menu">
+            <ul>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="">Каталог</a>
                     <ul>
-                        <li><a href="services.html">Послуги</a></li>
-                        <li><a href="">Каталог</a>
-                            <ul>
-                                <li><a href="../index.html#catalog">Каталог нерухомостей</a></li>
-                                <li><a href="gallery.html">Галерея</a></li>
-                            </ul>
-                        <li><a href="feedbacks.html">Відгуки</a></li>
-                        <li><a href="#">Замовити послугу</a></li>
+                        <li><a href="../index.html#catalog">Каталог нерухомостей</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
                     </ul>
-                </nav>    
-            </div>
+                <li><a href="feedbacks.html">Відгуки</a></li>
+                <li><a href="#">Замовити послугу</a></li>
+            </ul>
+            </nav>
+        </div>
         <div class="header-items header-search">
             <input id="text-to-find" class="header-search_search" type="text">
             <input onclick="FindOnPage('text-to-find')" class="header-search_button" type="submit" value="Шукати">
         </div>
     </section>
     <section class="mobile">
-            <nav class="mobile-menu">
-                <a href="services.html"><li>Послуги</li> </a>
-                <a href="#" id="mobile-submenu"><li>Каталог</li> </a>
-                <ul class="mobile-submenu">
-                    <a href="../index.html#catalog"><li>Каталог нерухомостей</li> </a>
-                    <a href="gallery.html"><li>Галерея</li> </a>
-                </ul>
-                <a href="feedbacks.html"><li>Відгуки</li> </a>
-                <a href="#order"><li id="last-li">Замовити послугу</li> </a>
-            </nav>
-        </section>
-    <div class="breadcrumbs-gallery">
-            <ul>
-                <li><a  class="gallery-bread" href="../index.html">Головна</a></li>
-                <li><span>Галерея</span></li>
+        <nav class="mobile-menu">
+            <a href="services.html">
+                <li>Послуги</li>
+            </a>
+            <a href="#" id="mobile-submenu">
+                <li>Каталог</li>
+            </a>
+            <ul class="mobile-submenu">
+                <a href="../index.html#catalog">
+                    <li>Каталог нерухомостей</li>
+                </a>
+                <a href="gallery.html">
+                    <li>Галерея</li>
+                </a>
             </ul>
-        </div>
-<!-- GALLERY -->
+            <a href="feedbacks.html">
+                <li>Відгуки</li>
+            </a>
+            <a href="#order">
+                <li id="last-li">Замовити послугу</li>
+            </a>
+        </nav>
+    </section>
+    <div class="breadcrumbs-gallery">
+        <ul>
+            <li><a class="gallery-bread" href="../index.html">Головна</a></li>
+            <li><span>Галерея</span></li>
+        </ul>
+    </div>
+    <!-- GALLERY -->
     <div id="gallery" class="gallery">
         <a class="photo" href="../images/gallery/item1.jpg"> <img src="../images/gallery/item1.jpg" alt=""></a>
         <a class="photo" href="../images/gallery/item2.jpg"><img src="../images/gallery/item2.jpg" alt=""></a>
@@ -79,19 +93,18 @@
             <h2 class="footer-title">
                 Замовлення послуги
             </h2>
-            <form action="#">
-                <input type="text" placeholder="ПІБ*" required>
-                <input type="email" placeholder="Email*" required>
-                <input type="phone" placeholder="Телефон*" required>
-                <select name="" id="footer-select">
+            <form>
+                <input id="guestName" type="text" placeholder="ПІБ*" required>
+                <input id="guestEmail" type="email" placeholder="Email*" required>
+                <input id="guestPhone" type="phone" placeholder="Телефон*" required>
+                <select name="" id="chosenService">
                     <option value="" disabled selected hidden>Виберіть Послугу</option>
-
-                    <option value="name">Продаж нерухомості</option>
-                    <option value="name">Купівля нерухомості</option>
-                    <option value="name">Оформлення документів</option>
-                    <option value="name">Підбір матеріалів</option>
+                    <option value="Продаж нерухомості">Продаж нерухомості</option>
+                    <option value="Купівля нерухомості">Купівля нерухомості</option>
+                    <option value="Оформлення документів">Оформлення документів</option>
+                    <option value="Підбір матеріалів">Підбір матеріалів</option>
                 </select>
-                <input type="submit" value="Відправити">
+                <input type="submit" id="saveData" value="Замовити">
             </form>
         </div>
         <div class="footer-contacts">
@@ -102,24 +115,27 @@
             <p class="footer-contacts_numbers">info@agency.com</p>
             <p class="footer-contacts_numbers">м. Вінниця вул. Келецька 98</p>
         </div>
-        
+
     </section>
     <div id="map"></div>
 
-    
+
 
 
     <script src="../js/map.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/formData.js"></script>
+    <script src="../js/search.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
-    async defer></script>
-<script src="../js/jquery-1.4.3.min.js"></script>
-   <script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        async defer></script>
+    <script src="../js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="../js/menu.js"></script>
     <script>
-   $(document).ready(function(){
-		$("a.photo").fancybox();
+        $(document).ready(function () {
+            $("a.photo").fancybox();
         });
     </script>
 </body>
+
 </html>

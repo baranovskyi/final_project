@@ -28,9 +28,10 @@
                     <ul>
                         <li><a href="#catalog">Каталог нерухомостей</a></li>
                         <li><a href="pages/gallery.html">Галерея</a></li>
-                    </ul></li>  
+                    </ul>
+                </li>
                 <li><a href="pages/feedbacks.html">Відгуки</a></li>
-                <li><a href="#">Замовити послугу</a></li>
+                <li><a href="#order">Замовити послугу</a></li>
             </ul>
             </nav>
         </div>
@@ -41,14 +42,26 @@
     </section>
     <section class="mobile">
         <nav class="mobile-menu">
-            <a href="pages/services.html"><li>Послуги</li> </a>
-            <a href="#catalog" id="mobile-submenu"><li>Каталог</li> </a>
+            <a href="pages/services.html">
+                <li>Послуги</li>
+            </a>
+            <a href="#catalog" id="mobile-submenu">
+                <li>Каталог</li>
+            </a>
             <ul class="mobile-submenu">
-                <a href="#catalog"><li>Каталог нерухомостей</li> </a>
-                <a href="pages/gallery.html"><li>Галерея</li> </a>
+                <a href="#catalog">
+                    <li>Каталог нерухомостей</li>
+                </a>
+                <a href="pages/gallery.html">
+                    <li>Галерея</li>
+                </a>
             </ul>
-            <a href="pages/feedbacks.html"><li>Відгуки</li> </a>
-            <a href="#order"><li id="last-li">Замовити послугу</li> </a>
+            <a href="pages/feedbacks.html">
+                <li>Відгуки</li>
+            </a>
+            <a href="#order">
+                <li id="last-li">Замовити послугу</li>
+            </a>
         </nav>
     </section>
     <!-- Services -->
@@ -74,20 +87,28 @@
     <div class="catalog-filter">
         <p class="catalog-filter_title">Фільтр за розташуванням</p>
         <div id="changeCheckbox">
-            <span><input class="checkBox" type="checkbox" value="Київ" id="check1"><label for="check1">Київ</label></span> 
-           <span><input class="checkBox" type="checkbox" value="Одеса" id="check2"><label for="check2">Одеса</label></span> 
-           <span><input class="checkBox" type="checkbox" value="Львів" id="check3"><label for="check3">Львів</label></span> 
-           <span><input class="checkBox" type="checkbox" value="Харків" id="check4"><label for="check4">Харків</label></span> 
-           <span><input class="checkBox" type="checkbox" value="Вінниця" id="check5"><label for="check5">Вінниця</label></span> 
-           <span><input class="checkBox" type="checkbox" value="Дніпро" id="check6"><label for="check6">Дніпро</label></span>  
-            <span><input class="checkBox" type="checkbox" value="Донецьк" id="check7"><label for="check7">Донецьк</label></span> 
+            <span><input class="checkBox" type="checkbox" value="Київ" id="check1"><label
+                    for="check1">Київ</label></span>
+            <span><input class="checkBox" type="checkbox" value="Одеса" id="check2"><label
+                    for="check2">Одеса</label></span>
+            <span><input class="checkBox" type="checkbox" value="Львів" id="check3"><label
+                    for="check3">Львів</label></span>
+            <span><input class="checkBox" type="checkbox" value="Харків" id="check4"><label
+                    for="check4">Харків</label></span>
+            <span><input class="checkBox" type="checkbox" value="Вінниця" id="check5"><label
+                    for="check5">Вінниця</label></span>
+            <span><input class="checkBox" type="checkbox" value="Дніпро" id="check6"><label
+                    for="check6">Дніпро</label></span>
+            <span><input class="checkBox" type="checkbox" value="Донецьк" id="check7"><label
+                    for="check7">Донецьк</label></span>
         </div>
     </div>
     <div class="sortElements">
-            <p>Сортувати по ціні</p> <button id="sortMin">макс до мін</button>
-            <button id="sortMax">мін до макс</button>
+        <p>Сортувати по ціні</p> <button id="sortMin">макс до мін</button>
+        <button id="sortMax">мін до макс</button>
+        <a href="#object" class="addNewObject" rel="modal:open">Додати об'єкт</a>
     </div>
-    
+
     <div class="catalog" id="content">
         <div class="catalog-content" data-parent="Київ" data-num=1 data-cost="22000">
             <div class="catalog-content_item" id="catalog-item">
@@ -117,28 +138,28 @@
         <input type="file" id="objectImage" data-button-text="Завантажте картинку">
         <input type="submit" id="submit" value="Додати об'єкт">
     </div>
-          <a href="#object" class="addNewObject" rel="modal:open">Додати об'єкт</a>
+
 
 
 
     <!-- CONTACTS -->
-    <section class="footer">
-        <div id="order" class="footer-form">
+    <section id="order" class="footer">
+        <div class="footer-form">
             <h2 class="footer-title">
                 Замовлення послуги
             </h2>
-            <form action="">
+            <form>
                 <input id="guestName" type="text" placeholder="ПІБ*" required>
                 <input id="guestEmail" type="email" placeholder="Email*" required>
                 <input id="guestPhone" type="phone" placeholder="Телефон*" required>
                 <select name="" id="chosenService">
                     <option value="" disabled selected hidden>Виберіть Послугу</option>
-                    <option value="name">Продаж нерухомості</option>
-                    <option value="name">Купівля нерухомості</option>
-                    <option value="name">Оформлення документів</option>
-                    <option value="name">Підбір матеріалів</option>
+                    <option value="Продаж нерухомості">Продаж нерухомості</option>
+                    <option value="Купівля нерухомості">Купівля нерухомості</option>
+                    <option value="Оформлення документів">Оформлення документів</option>
+                    <option value="Підбір матеріалів">Підбір матеріалів</option>
                 </select>
-                <input type="submit" value="Замовити">
+                <input type="submit" id="saveData" value="Замовити">
             </form>
         </div>
         <div class="footer-contacts">
@@ -151,7 +172,7 @@
         </div>
 
     </section>
-    
+
     <div id="map"></div>
 
     <script src="js/slider.js"></script>
@@ -159,6 +180,7 @@
     <script src="js/search.js"></script>
     <script src="js/newObject.js"></script>
     <script src="js/paginator.js"></script>
+    <script src="js/formData.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
         async defer></script>
     <script src="js/jquery.js"></script>
@@ -167,7 +189,7 @@
     <script src="js/sort.js"></script>
     <script src="js/menu.js"></script>
     <script>
-        
+
     </script>
 </body>
 

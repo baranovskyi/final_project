@@ -337,6 +337,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 50px;
+    margin-top: 10px;
 }
 .footer-form, .footer-contacts {
     margin-top: 60px;
