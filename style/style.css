@@ -157,9 +157,7 @@ body {
 .catalog {
     display: flex; 
     flex-wrap: wrap;
-    /* align-content: stretch; */
     justify-content: center;
-    
     margin: 20px;
 } 
 
@@ -194,7 +192,7 @@ body {
     padding: 10px;
     min-width: 250px;
     max-width: 300px;
-    background-color: #F7FCFC;
+    background-color: #e8ebeb;
     color: #989898;
     margin: 20px;
 }
@@ -226,7 +224,23 @@ body {
     width: 250px;
     margin: 10px auto;
 }
-
+.sortElements {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.sortElements p {
+    color: #666565;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.sortElements button {
+    background-color: #cac8c8;
+    border: none;
+    color: #666565;
+    padding: 5px 10px;
+    border-radius: 15px;
+ }
 /* SERVICES */ 
 .services {
     display: flex;
@@ -237,6 +251,7 @@ body {
 .services-item {
     max-width: 250px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .services-item img {
     max-width: 250px;
@@ -441,7 +456,24 @@ body {
         color: #fff;
     }
 }
-
+@media screen and (max-width: 600px) {
+    #changeCheckbox {
+        margin-left: 40%;
+    }
+    .catalog-filter input {
+        /* display: block; */
+        float: left;
+        margin-right: 5px;
+    }
+    .catalog-filter label {
+        float: left;
+    }
+    .catalog-filter span {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+}
 
   .paginator {
       text-align: center;

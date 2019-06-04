@@ -26,7 +26,7 @@
                         <li><a href="services.html">Послуги</a></li>
                         <li><a href="">Каталог</a>
                             <ul>
-                                <li><a href="#catalog">Каталог нерухомостей</a></li>
+                                <li><a href="../index.html#catalog">Каталог нерухомостей</a></li>
                                 <li><a href="gallery.html">Галерея</a></li>
                             </ul>
                         <li><a href="feedbacks.html">Відгуки</a></li>
@@ -40,13 +40,17 @@
         </div>
     </section>
     <section class="mobile">
-        <nav class="mobile-menu">
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="#catalog">Каталог нерухомостей</a></li>
-            <li><a href="feedbacks.html">Відгуки</a></li>
-            <li><a href="#order">Замовити послугу</a></li>
-        </nav>
-    </section>
+            <nav class="mobile-menu">
+                <a href="services.html"><li>Послуги</li> </a>
+                <a href="#catalog" id="mobile-submenu"><li>Каталог</li> </a>
+                <ul class="mobile-submenu">
+                    <a href="../index.html#catalog"><li>Каталог нерухомостей</li> </a>
+                    <a href="gallery.html"><li>Галерея</li> </a>
+                </ul>
+                <a href="feedbacks.html"><li>Відгуки</li> </a>
+                <a href="#order"><li id="last-li">Замовити послугу</li> </a>
+            </nav>
+        </section>
     <div class="breadcrumbs">
         <ul>
             <li><a href="../index.html">Головна</a></li>
@@ -165,5 +169,7 @@
     <script src="../js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
     async defer></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
