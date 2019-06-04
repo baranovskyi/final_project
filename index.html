@@ -110,14 +110,14 @@
     </div>
     <div class="paginator" onclick="pagination(event)"></div>
 
-    <div class="newObject">
+    <div id="object" class="newObject">
         <input type="text" id="place" placeholder="Місто розташування">
         <input type="text" id="square" placeholder="Площа об'єкту">
         <input type="text" id="cost" placeholder="Ціна об'єкту">
         <input type="file" id="objectImage" data-button-text="Завантажте картинку">
         <input type="submit" id="submit" value="Додати об'єкт">
     </div>
-
+          <a href="#object" class="addNewObject" rel="modal:open">Додати об'єкт</a>
 
 
 
@@ -151,6 +151,7 @@
         </div>
 
     </section>
+    
     <div id="map"></div>
 
     <script src="js/slider.js"></script>
@@ -158,11 +159,11 @@
     <script src="js/search.js"></script>
     <script src="js/newObject.js"></script>
     <script src="js/paginator.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKPlNVZ_XWuu9a2H8hVfj8GwXG1PUMWu4&callback=initMap"
         async defer></script>
     <script src="js/jquery.js"></script>
-    <!-- <script src="js/order.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="js/sort.js"></script>
     <script src="js/menu.js"></script>
     <script>

@@ -216,13 +216,39 @@ body {
     border-radius: 20px;
     
 }
+
+#object {
+    background-color: #302b2d;
+}
 .newObject {
-    text-align: center;
+    display: none;
 }
 .newObject input {
     display: block;
-    width: 250px;
-    margin: 10px auto;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    background-color: #302b2d;
+    width: 260px;
+    height: 30px;
+    padding-left: 10px;
+    color: #fff;
+}
+.newObject input:nth-child(4) {
+    border: none;
+}
+.newObject input:nth-child(5) {
+    width: 275px;
+}
+.addNewObject {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cac8c8;
+    border-radius: 15px;
+    color: #666565;
 }
 .sortElements {
     display: block;
@@ -369,6 +395,24 @@ body {
 #map {
     height: 400px;
 } 
+.paginator {
+    text-align: center;
+  line-height: 150%;
+}
+.paginator > span {
+  display: inline-block;
+  width: 20px;
+  background-color: #d6d3d3;
+  margin-right: 7px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+.paginator_active {
+  color: red;
+}
+#ex1 {
+    background-color: red;
+}
 @media screen and (max-width: 992px) {
     .header-nav a {
         font-size: 16px;
@@ -471,23 +515,16 @@ body {
     .catalog-filter span {
         display: block;
         overflow: hidden;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .catalog-content {
+        min-width: 300px;
+    }
+    .item-image {
+        min-width: 290px;
+        min-height: 290px;
     }
 }
-
-  .paginator {
-      text-align: center;
-    line-height: 150%;
-  }
-  .paginator > span {
-    display: inline-block;
-    width: 20px;
-    background-color: #d6d3d3;
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  .paginator_active {
-    color: red;
-  }
+  
 
   
