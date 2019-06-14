@@ -1,3 +1,4 @@
+var formObject = document.getElementsByClassName("formObjectInput");
 var nameInput = document.getElementById('guestName');
 var emailInput = document.getElementById('guestEmail');
 var phoneInput = document.getElementById('guestPhone');
@@ -18,9 +19,13 @@ function saveJson() {
         "phone": phoneInput.value,
         "service": serviceInput.value
     }
+    
     var data = JSON.stringify(chosenService)
+    
     console.log(chosenService)
-    download(data, 'output.json', "application/json");
+    download(data, 'data.json', "application/json");
+    alert("Дякуємо. Вам скоро зателефонують");
+    location.reload();
 }
 submitBtn.addEventListener('click', saveJson)   
 

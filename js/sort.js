@@ -2,7 +2,7 @@
 var $catalog = $('.catalog');
 $('#sortMin').click(function () {
 $catalog.find('.catalog-content').sort(function (a, b) {
-    return -a.dataset.cost + +b.dataset.cost;
+    return -a.dataset.cost  +b.dataset.cost;
 })
 .appendTo( $catalog );
 })
@@ -10,7 +10,7 @@ $catalog.find('.catalog-content').sort(function (a, b) {
 
 $('#sortMax').click(function () {
 $catalog.find('.catalog-content').sort(function (a, b) {
-    return +a.dataset.cost - +b.dataset.cost;
+    return +a.dataset.cost -b.dataset.cost;
 })
 .appendTo( $catalog );
 })

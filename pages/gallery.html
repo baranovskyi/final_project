@@ -32,7 +32,7 @@
                         <li><a href="gallery.html">Галерея</a></li>
                     </ul>
                 <li><a href="feedbacks.html">Відгуки</a></li>
-                <li><a href="#">Замовити послугу</a></li>
+                <li><a href="#order">Замовити послугу</a></li>
             </ul>
             </nav>
         </div>
@@ -93,11 +93,11 @@
             <h2 class="footer-title">
                 Замовлення послуги
             </h2>
-            <form>
-                <input id="guestName" type="text" placeholder="ПІБ*" required>
-                <input id="guestEmail" type="email" placeholder="Email*" required>
-                <input id="guestPhone" type="phone" placeholder="Телефон*" required>
-                <select name="" id="chosenService">
+            <form id="formObject">
+                <input class="formObjectInput" id="guestName" type="text" placeholder="ПІБ*" required>
+                <input class="formObjectInput" id="guestEmail" type="email" placeholder="Email*" required>
+                <input class="formObjectInput" id="guestPhone" type="phone" placeholder="Телефон*" required>
+                <select class="formObjectInput" name="" id="chosenService">
                     <option value="" disabled selected hidden>Виберіть Послугу</option>
                     <option value="Продаж нерухомості">Продаж нерухомості</option>
                     <option value="Купівля нерухомості">Купівля нерухомості</option>

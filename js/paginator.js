@@ -6,7 +6,7 @@ var countBlocks = []
   countBlocks.push(catalogBlocks[j]);
 }
 var count = countBlocks.length;
-var cnt = 2;
+var cnt = 8;
 var cnt_page = Math.ceil(count / cnt);
 
 var paginator = document.querySelector(".paginator");
